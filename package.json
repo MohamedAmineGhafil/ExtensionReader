@@ -1,0 +1,19 @@
+{
+  "name": "chrome-extension-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && copyfiles -u 1 src/*.html src/manifest.json src/icon.png dist/",
+    "watch": "tsc --watch",
+    "dev": "tsc --watch & copyfiles -u 1 src/*.html src/manifest.json src/icon.png dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.299",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.7.3"
+  }
+}
